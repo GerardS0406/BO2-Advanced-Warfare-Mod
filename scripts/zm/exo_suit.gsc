@@ -14,7 +14,6 @@ onplayerconnected()
 	{
 		level waittill("connected", player);
 		player thread exo_suit();
-		//player SetMoveSpeedScale(1.5);
 	}
 }
 

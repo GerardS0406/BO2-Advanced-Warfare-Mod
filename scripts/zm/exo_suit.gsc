@@ -68,15 +68,15 @@ exo_suit()
 					self.is_flying_jetpack = true;
 					self.sprint_boost++;
 					xvelo = self GetVelocity()[0];
-                    yvelo = self GetVelocity()[1];
-                    l = Length((xvelo, yvelo, 0));
-                    if(l < 10)
-                        continue;
-                    if(l < 190)
-                    {
-                        xvelo = int(xvelo * 190/l);
-                        yvelo = int(yvelo * 190/l);
-                    }
+					yvelo = self GetVelocity()[1];
+					l = Length((xvelo, yvelo, 0));
+					if(l < 10)
+					continue;
+					if(l < 190)
+					{
+						xvelo = int(xvelo * 190/l);
+						yvelo = int(yvelo * 190/l);
+					}
 
 					Earthquake( 0.22, .9, self.origin, 850 );
 					if(self.jump_boost == 1)

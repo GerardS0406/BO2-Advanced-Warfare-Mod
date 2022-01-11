@@ -71,7 +71,7 @@ exo_suit()
 					yvelo = self GetVelocity()[1];
 					l = Length((xvelo, yvelo, 0));
 					if(l < 10)
-					continue;
+						continue;
 					if(l < 190)
 					{
 						xvelo = int(xvelo * 190/l);

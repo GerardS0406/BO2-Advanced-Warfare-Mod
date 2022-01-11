@@ -129,8 +129,8 @@ monitor_exo_boost()
 		wait 3;
 		while(self.exo_boost < 100)
 		{
-			self.exo_boost += 10;
-			wait 0.5;
+			self.exo_boost += 5;
+			wait 0.25;
 		}
 	}
 }
